@@ -85,3 +85,11 @@ Also, this topic does not come up a lot in interviews, so just skimp through.
 ### isInstance vs instanceof
 - return Class.forName(c).isInstance(obj);
 - i instanceof Integer
+
+### LRU using LinkedHashMap
+- super(capacity+1, 1.0f, true);
+- super.get(key);
+- super.put(key, value);
+- @Override
+    protected boolean removeEldestEntry(Map.Entry<Integer, Integer> eldest) {
+        return this.size() > maxSize;
