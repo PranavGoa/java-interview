@@ -81,3 +81,7 @@ Also, this topic does not come up a lot in interviews, so just skimp through.
 - Requires class to implement Cloneable marker interface. Else returns CloneNotSupportedException
 - Singletons should override clone method and throw CloneNotSupportedException
 - [More details](../design/effective-java.md#clone)
+
+### isInstance vs instanceof
+- return Class.forName(c).isInstance(obj);
+- i instanceof Integer
